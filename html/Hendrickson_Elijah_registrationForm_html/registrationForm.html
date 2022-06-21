@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Registration Form
+        </title>
+        <!-- used "https://www.w3schools.com/tags/" for notes-->
+    </head>
+    <body>
+        <!--header tag - h1 meaning the most important <h> tag. Without css will appear larger than any of the other tags by default-->
+        <h1>Registration Form</h1>
+        <!--division tag - div separates its children from the rest of the form so that they are on their own block (away from all the other children of other divs)-->
+        <div>
+            <!--label - creates a label for the div. since its on the first line it appears first on the block followed by the rest of the content inline until the end of the div-->
+            <label>
+                First Name:*
+            </label>
+            <!--type attribute - lets the user know what kind of input(data) the form is requesting by specifying the type-->
+            <input type="text" name="fName">
+        </div>
+        <div>
+            <label>
+                Last Name:*
+            </label>
+            <!--name attribute specifies the name of the input element and is used to reference elements in JS or to ref form adata after said form is submitted-->
+            <input type="text" name="lName">
+        </div>
+        <div>
+            <label>
+                Email Address:*
+            </label>
+            <!--email will pull up common used emails of users desktop-->
+            <input type="text" name="email">
+        </div>
+        <div>
+            <label>
+                Password:*
+            </label>
+            <!--password will dot out entry for masking and privacy-->
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label>
+                Confirm Password:*
+            </label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label>
+                Birthday:
+            </label>
+            <!--date creates a mm/dd/yyyy entry with a clickable box which drops down a whole calendar-->
+            <input type="date" name="dateOfBirth">
+        </div>
+        <label>
+            Gender Identity:
+        </label>
+        <div>
+            <!--radio- type of button which gives a collection of options that are typically related. only one button in a group(defined by name) can be selected at the same time.;-->
+            <input type="radio" name="gender" value="male" id="male">
+            <!--for attribute specifies which form element the label is bound to(ie Male is bound to input value Male)-->
+            <label for="male">
+                Male
+            </label>
+            <!--value is what is sent to the back end upon submitting-->
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">
+                Female
+            </label>
+            <!--id attribute gives this element a specific id which can be used to style (like in CSS)-->
+            <input type="radio" name="gender" value="non-bi" id="non-bi">
+            <label for="non-bi">
+                Non-binary
+            </label>
+            <input type="radio" name="gender" value="noAns" id="noAns">
+            <label for="noAns">
+                I prefer not to answer
+            </label>
+        </div>
+        <label for="description">
+            A short description about myself:
+        </label>
+        <div>
+            <!--text area defines a multi text input control. often used for comments or reviews where the input requested can ben lengthy-->
+            <!--cols/rows defines how many columns/rows are displayed 1 col/row = 1 char-->
+            <textarea name="description" id="description" cols="32" rows="2">
+            </textarea>
+        </div>
+        <div>
+            <label for="favLan">
+                Favorite Language:
+            </label>
+            <!--select creates a drop down list of pre made options for user input-->
+            <!--id associates the list with the label-->
+            <select name="favLan" id="favLan">
+                <option value="js">
+                    JavaScript
+                </option>
+                <option value="py">
+                    Python
+                </option>
+                <option value="c#">
+                    C#
+                </option>
+                <option value="java">
+                    Java
+                </option>
+                <option value="c++">
+                    C++
+                </option>
+            </select>
+        </div>
+        <div>
+            <!--checkbox -creates a 'checkbox' for user input-->
+            <input type="checkbox" name="updates" id="updates">
+            <label for="updates">
+                Yes, I would like to receive periodic email updates
+            </label>
+        </div>
+        <div>
+            <!--submit defines a submit button which submits all the values from the form to the for handler-->
+            <!--the value for this input type will dispaly on the button-->
+            <input type="submit" value="Create Account">
+        </div>
+        <!--a simple p tag for a paragraph or note at the end of the form-->
+        <p>
+            *Indicates a required field
+        </p>
+        
+    </body>
+</html>

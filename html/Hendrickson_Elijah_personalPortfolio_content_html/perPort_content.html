@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+    </head>
+    <body>
+        <div>
+            <!--h tags range from 1-6. 1 being the most important and 6 being the least imporant-->
+            <h1>Elijah Hendrickson</h1>
+            <!--img stands for image and refers the image being presented.-->
+            <!--src means source and refers to where you are getting your image from. you can upload an image into your file that is shared with this html doc or you can copy and paste the image address.-->
+            <!--the 'alt' gives information of what is displayed in the image so that a text reader can describe the image or if the image doesn't load the page has something to display and lets the user know what was meant to be in the image.-->
+            <img src="./Me.jpg" alt="Photo of me at Vantage Washington" width="300" height="400" >
+            <!--p is a paragraph tag and is a form of displaying written content-->
+            <p>
+                Hellloooooooo! My name is Elijah. I'm from Seattle, Washington, however, I currently live in Kansas City, Missouri.
+            </p>
+        </div>
+        <!--section for hobbies-->
+        <div>
+            <h3>Hobbies</h3>
+            <h4>Snowboarding</h4>
+            <p>
+                I learned how to snowboard while attending highschool as a senior project. Ever since then I try and make it up to a mountain every season to shred some of that glorious pow pow.
+            </p>
+            <h4>Bouldering</h4>
+            <p>
+                Bouldering has been a great way for me to get movement in my body and test my mental. I like to think of it as a puzzle that is solved with your body and is a great way to break up the monotony of gym exercises.
+            </p>
+            <h4>Baking Pie</h4>
+            <p>
+                I love pie. Custard pies/fruit pies, makes no difference to me. Nothing beats a homemade pie and its my go-to when I need to bring a dessert to a party or if I want to let someone know I like them.
+            </p>
+            <h5>Favorite recipes</h5>
+            <!--ul is an 'unordered list' this is a list of content that is grouped together with bullets-->
+            <ul>
+                <!--li is a 'list item' and is the content which is placed in the unordered list-->
+                <!--a tag is an 'anchor' which links another page to this page-->
+                <!--href is an attribute which specifies the url of the page that you are linking-->
+                <li><a href="https://www.seriouseats.com/classic-fresh-key-lime-pie-recipe">Key lime pie</a></li>
+                <li><a href="https://www.seriouseats.com/fresh-cherry-pie-filling-recipe">Cherry Pie</a></li>
+                <li><a href="https://www.seriouseats.com/bravetart-easy-apple-pie-recipe">Apple Pie</a></li>
+            </ul>
+            <h4>PC Games</h4>
+            <ul>
+                <li>League of Legends</li>
+                <li>Civilization 6</li>
+                <li>Gloomhaven</li>
+            </ul>
+        </div>
+        <div>
+            <!--photo and information on my cat-->
+            <h3>My Cat</h3>
+            <!--height and width are attributes given to the photo which dictates the size of the photo regardless of the actual size of the photo. because the actual photos are 3024 x 4024 the photos would take up too much of the page.-->
+            <img src="./Duch.JPG" alt="My cat - Duchess" width="400" height="300">
+            <br>
+            <p>
+                My cats name is Duchess. She is 10 years old. She enjoys napping, cleaning herself, and murder.
+            </p>
+        </div>
+        <div>
+            <!-- table displaying movies and ratings-->
+            <h3>Movies I've seen this year</h3>
+            <table>
+                <!--tr is a table row. these elements are on the same horizontal plane and every table must have to display a table-->
+                <tr>
+                    <!--th is a 'table header'. this is the top of the table which gives a label to each column in the table. by default they are bold and center-aligned-->
+                    <th>Name</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <!--td is 'table data'. its the information that is in the table in respect to the column tha its in.-->
+                    <!--first column-->
+                    <td>The Northman</td>
+                    <!--second column-->
+                    <td>3.5/5 Vikings</td>
+                </tr>
+                <tr>
+                    <td>Uncharted</td>
+                    <td>3/5 Marky Marks</td>
+                </tr>
+                <tr>
+                    <td>The Batman</td>
+                    <td>4/5 Batmobiles</td>
+                </tr>
+                <tr>
+                    <td>Everything Everywhere All at Once</td>
+                    <td>5/5 Hotdog Fingers</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>Contact Elijah</h3>
+            <!--form creates a form for user input-->
+            <form>
+                <!--the label lets the user know what the input should be for the given text field-->
+                <label for="name">Name:</label>
+                <br>
+                <!--the type method defines the type of information for the given input.-->
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <!--method 'email' lets the user know that this field is looking for a valid email address-->
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="textMessage">Message:</label>
+                <br>
+                <!--textarea defines a multi-lined text input-->
+                <!--cols refers to how many columns are in the textarea and is defined by the amount of characters allowed in the column of the textarea-->
+                <!--rows refers to the amount of rows in the text area-->
+                <textarea id="textMessage" name="textMessage" cols="21" rows="15"></textarea>
+                <br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
+
