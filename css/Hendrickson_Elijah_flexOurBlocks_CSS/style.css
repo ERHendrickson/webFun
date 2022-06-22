@@ -1,0 +1,42 @@
+.container{
+    width: 950px;
+    background-color: silver;
+    margin: 0px auto;
+    padding: 15px;
+}
+.top-nav {
+    height: 150px;
+    background-color: green;
+    margin-bottom: 15px;
+}
+.side-nav {
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+    margin-right: 15px;
+}
+.main {
+    height: 400px;
+    width: 700px;
+    background-color: red;
+    padding: 18px;
+}
+.sub-content {
+    height: 200px;
+    width: 210px;
+    background-color: yellow;
+    margin-right:  15px;
+}
+#advertisement {
+    height: 120px;
+    width: 660px;
+    background-color: purple;
+    margin-top: 30px;
+}
+
+/*flexbox is a one dimensional layout system used to design reponsive web pages(responsive meaning it still looks good no matter what app you're using ->mobile, pc, dif webbrowsers)*/
+.row {
+    /* TODO - what should go here? */
+    /*by giving the attribute 'display' a value of flex (in the selector .row) it sets all of the children of this class (parent ->.row) (children -> .side-nav - the blue box, .main -the redbox) to be a flex item which has the default value of inline instead of box. this is because the default value of flex sets the elements in this container on the x axis of the parent container. we can change the axis, we can change the order we can do a lot and it makes designing much easier*/ 
+    display: flex;
+}

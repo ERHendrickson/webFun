@@ -1,0 +1,42 @@
+img{
+    /*assignment calls for height:200, however putting a % value for width and setting height to auto adjusts the images to whatever size the browser is*/
+    width: 25%;
+    height: auto;
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(96, 180, 0);
+    font-size: 350%;
+}
+span{
+    color: rgb(4, 129, 0);
+}
+#rowOne{
+    display:flex;
+    background-color: rgba(255, 55, 55, 0.904);
+    /*sets the children of this selector to have equal space on either side of each child*/
+    justify-content: space-around;
+    margin: 1%;
+    padding: 1%;
+}
+
+#rowTwo{
+    display: flex;
+    background-color: rgb(71, 71, 255);
+    justify-content: space-evenly;
+    margin: 1%;
+    padding: 1%;
+}
+#rowThree{
+    display: flex;
+    background-color: rgb(248, 248, 106);
+    /*the children of this selector have */
+    justify-content: space-between;
+    margin: 1%;
+    padding: 1%;
+}
+
+#body{
+    margin: 1%;
+}
