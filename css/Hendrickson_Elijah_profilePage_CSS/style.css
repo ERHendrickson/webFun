@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+#navBar{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    padding-right: 70px;
+}
+
+ul > li{
+    list-style: none;
+    padding: 0 20px;
+    font-size: larger;
+}
+
+li > a{
+    text-decoration: none;
+    color: white;
+}
+
+/* selects the 2nd child of the list items (my profile) */
+li:nth-child(2){
+    font-weight: bold;
+}
+
+/* button on nav bar */
+#signOut{
+    background-color: red;
+    color: white;
+    padding: 0 20px;
+    font-size: larger;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+}
+
+#colOne{
+    width: 500px;
+    margin: 25px 25px 0 150px;
+}
+/* left column */
+#userCard{
+    background-color: white;
+    height: 350px;
+    outline: 2px solid black;
+    margin-bottom: 25px;
+}
+/* styling for first box */
+#cardBar{
+    background-image:linear-gradient(red, black) ;
+    height: 100px;
+    position: relative;
+    outline: 2px solid red;
+    box-shadow: -10px -10px 10px black;
+}
+
+#overlay{
+    position: relative;
+    bottom: 45px;
+    left: 25px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#loc{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#titles{
+    padding: 10px 0;
+}
+
+#edit{
+    display: flex;
+    align-items: center;
+}
+/* begins edu box */
+#edu{
+    outline: 2px solid red;
+}
+
+.eduCont > h6{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.eduCont > p:first-of-type{
+    color: rgba(255, 0, 0, 0.795);
+    padding: 10px 0;
+}
+
+.eduCont{
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.eduCont:first-child{
+    font-weight: bold;
+}
+
+/* bar styling for remaining box's */
+.heading{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    position: relative;
+    outline: 2px solid black;
+    box-shadow: -5px -5px 5px rgb(255, 0, 0);
+}
+
+
+/* right column */
+#colTwo{
+    width: 250px;
+    margin: 25px 150px 0 0;
+}
+
+#conReq{
+    outline: 2px solid red;
+    margin-bottom: 25px;
+}
+
+.connUser{
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+}
+.users{
+    flex: 1;
+    align-self: flex-start;
+}
+
+#yourCon{
+    outline: 2px solid red;
+}
+
+#yourCon > a{
+    display: block;
+    outline: 2px solid red;
+    padding: 5px 10px;
+}
+
+/* Selects the numbers next to the heading on the connection requests and your connections box*/
+.heading > p{
+    background-color: rgb(255, 0, 0);
+    color: black;
+    border-radius: 50%;
+    padding: 4px 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* imgige styling */
+#lImg{
+    background-color: white;
+    width: 100px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.sImg{
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0 10px 10px 0;
+}
+
+.minImg{
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.actImg{
+    width: 30px;
+    height: auto;
+    margin: 0 5px 10px 0;
+}
