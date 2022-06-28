@@ -49,7 +49,7 @@ li:nth-child(2){
 }
 
 #colOne{
-    width: 500px;
+    flex: 3;
     margin: 25px 25px 0 150px;
 }
 /* left column */
@@ -130,7 +130,7 @@ li:nth-child(2){
 
 /* right column */
 #colTwo{
-    width: 250px;
+    flex: 1;
     margin: 25px 150px 0 0;
 }
 
@@ -147,7 +147,9 @@ li:nth-child(2){
     justify-content: space-between;
 }
 .users{
+    /* gives the remaining space in the box to this element */
     flex: 1;
+    /* align self: flex-start allows the users to be displayed above the y axis of the grouping */
     align-self: flex-start;
 }
 

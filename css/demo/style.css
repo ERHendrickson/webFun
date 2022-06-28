@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav-bar{
+    margin: 0 30px 20px 30px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+h1{
+    font-size: 35px;
+}
+
+#nav-bar input{
+    height: 30px;
+    width: 240px;
+    font-size: 18px;
+}
+
+#nav-bar button{
+    height: 30px;
+    padding: 5px 15px;
+    background-color: darkgoldenrod;
+    box-shadow: 3px 3px black;
+
+}
+
+#main{
+    height: 800px;
+    margin: 0 30px;
+    display: flex;
+    gap: 15px;
+}
+
+#colOne{
+    outline: 3px solid black;
+    flex: 2;
+}
+
+#colTwo{
+    outline: 3px solid black;
+    flex: 1;
+}
+
+.pupPro{
+    outline: 3px solid red;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pupRight{
+    font-size: 20px;
+}
+
+.pupLeft{
+    text-align: center;
+    margin-right: 30px;
+}
+
+.pupLeft button{
+    background-color: aquamarine;
+    padding: 5px 15px;
+}
+
+.pupLeft > img{
+    height: auto;
+    width: 150px;
+}
+
+.pupLeft > h2{
+    font-size: 30px;
+}

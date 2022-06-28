@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* nav bar */
+#nav-bar{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    margin: 0 100px;
+}
+
+#nav-bar > input{
+    outline: 2px solid black;
+    width: 225px;
+}
+
+#nav-bar > button{
+    background-color: rgb(43,120,228);
+    color: white;
+    padding: 0px 5px;
+    box-shadow: 3px 3px black;
+}
+/* main box*/
+#main{
+    display: flex;
+    margin: 0 100px;
+}
+
+/* LEFT COLUMN */
+#lCOl{
+    flex: 3;
+    margin-right: 20px;
+}
+
+.entry{
+    display: flex;
+    align-items: center;
+    outline: 2px solid black;
+    margin: 20px 2px;
+}
+
+.lEntry{
+    padding: 10px;
+    margin-right: 25px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.lEntry > *{
+    text-align: center;
+}
+
+.lEntry > p{
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.lEntry > button{
+    background-color: rgb(255,217,102);
+    padding: 5px 15px;
+    margin: 10px 0;
+    box-shadow: 3px 3px black;
+}
+
+.rEntry{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 40px;
+}
+
+/* RIGHT COLUMN */
+#rCol{
+    flex: 1;
+    margin: 20px 2px 0 0;
+}
+
+#addDict{
+    outline: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 150px;
+
+}
+
+#addDict > p{
+    font-size: 25px;
+}
+
+#addDict > button{
+    margin: 10px 0;
+    font-size: 15px;
+    padding: 5px 0;
+    background-color: rgb(147,196,125);
+    box-shadow: 3px 3px black;
+}

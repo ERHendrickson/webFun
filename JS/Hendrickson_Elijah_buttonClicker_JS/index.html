@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Button Clicker</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav-bar">
+            <h1>Dojonary</h1>
+            <input type="text" placeholder="Search">
+            <!-- the 'this' argument is passed to the custom js function 'logInOut' when the button is clicked. 'this' allows js to read the content of this button element and/or manipulate it. in this case when the button is clicked the function in js is invoked and reads 'this' as its parameter then the function executes its instructions which uses the .innerText property to alter the appearance of the button to "Logout" -->
+            <button onclick="logInOut(this)">Login</button>
+        </div>
+        <div id="main">
+            <div id="lCOl">
+                <div class="entry">
+                    <div class="lEntry">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural:<em>ninjas</em></p>
+                        <!-- onclick is an event which means when the button element is clicked by the user -->
+                        <!-- alert() is a built in function which displays an alert box with a message (whatever is passed as its argument) and an ok button -->
+                        <button onclick="alert('Ninja was liked')">13 likes</button>
+                    </div>
+                    <div class="rEntry">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="lEntry">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural:<em>ninjas</em></p>
+                        <button onclick="alert('Ninja was liked')">37 likes</button>
+                    </div>
+                    <div class="rEntry">
+                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <div id="rCol">
+                <div id="addDict">
+                    <p>Dojonary is defined by <strong>YOU</strong></p>
+                    <button onclick="vanish(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
