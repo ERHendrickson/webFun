@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navBar{
+    background-color: rgb(159,197,248);
+    color: white;
+    font-size: larger;
+
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+
+h1{
+    margin-right: 100px;
+    /* border: 2px solid black; */
+}
+
+.city{
+    display: flex;
+    font-size: 20px;
+}
+
+.city > h3{
+    padding-right: 20px;
+
+}
+#main{
+    margin: 20px 100px;
+}
+
+#subBar{
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    flex: 1;
+}
+
+#subBar > p{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#temp{
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#bar{
+    border: 2px solid black;
+    margin: 20px 0px;
+}
+
+#dayBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.day{
+    background-color: rgb(238,238,238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    font-size: 25px;
+}
+
+.day > *{
+    margin: 10px 20px;
+    font-weight: bold;
+}
+
+.day > img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.tempSwap{
+    display: flex;
+}
+
+.high{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+.low{
+    color: rgb(43,120,228);
+    font-weight: bold;
+}
+
+#cookieBox{
+    display: flex;
+    align-items: center;
+    margin: 0px 100px;
+    border: 2px solid black;
+    background-color: rgb(238,238,238);
+    position: fixed;
+    bottom: 10px;
+}
+
+#cookieBox > *{
+    margin: 10px;
+}
+
+#cookieBox > button{
+    background-color: rgb(159,197,248);
+    white-space: nowrap;
+    padding: 0px 10px;
+    box-shadow: 4px 4px 4px black;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navBar">
+            <h1>Profile</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+            <button id="signOut">Sign Out</button>
+        </div>
+        <div id="main">    
+            <div id="colOne">
+                <div id="userCard">
+                    <div id="cardBar"></div>
+                    <div id="overlay">
+                        <img id="lImg" src="./images/me_icon.jpg" alt="user icon">
+                        <h2 id="proName">Elijah Hendrickson</h2>
+                        <div id="loc">
+                            <img class="minImg" src="./icons/map-marker.png" alt="pin icon">
+                            <p>Seattle</p>
+                        </div>
+                        <div id="titles">
+                            <p>Developer | Engineer | Problem Solver</p>
+                            <p>Protector of Kittens | Breaker of CSS</p>
+                        </div>
+                        <div id="edit">
+                            <img class="minImg" src="./icons/gear.png" alt="gear icon">
+                            <a href="#" onclick="nameSwap('#proName')">edit profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="edu">
+                    <h4 class="heading">Education</h4>
+                    <div class="eduCont">
+                        <h6>Coding Dojo - Full Stack Bootcamp</h6>
+                        <p>Jun 2022 - Sep 2022</p>
+                        <p>Triple black belt in Python, MERN, and C#...</p>
+                    </div>
+                </div>
+            </div>
+            <div id="colTwo">
+                <div id="conReq">
+                    <div class="heading">
+                        <p id= requests>2</p>
+                        <h4>Connection Requests</h4>
+                    </div>
+                    <div class="connUser">
+                        <img class="sImg" src="./images/todd-s.jpg" alt="user icon">
+                        <p class="users">Todd E</p>
+                            <img class="actImg" onclick="removeUser('.connUser'), dec('#requests'), addCon()" src="./icons/accept-circle.png" alt="check icon">
+                            <img class="actImg" onclick="removeUser('.connUser'), dec('#requests')" src="./icons/close-circle.png" alt="x icon">
+                    </div>
+                    <div class="connUser">
+                        <img class="sImg" src="./images/phil-s.jpg" alt="user icon">
+                        <p class="users">Phil K</p>
+                            <img class="actImg" onclick="removeUser('.connUser'), dec('#requests'), addCon()" src="./icons/accept-circle.png" alt="check icon">
+                            <img class="actImg" onclick="removeUser('.connUser'), dec('#requests')" src="./icons/close-circle.png" alt="x icon">   
+                    </div>
+                </div>
+                <div id="yourCon">
+                    <div class="heading">
+                        <p><span id="connects">500</span>+</p>
+                        <h4>Your Connections</h4>
+                    </div>
+                    <div class="connUser">
+                        <img class="sImg" src="./images/adrien-s.jpg" alt="user icon">
+                        <p class="users">Adrien D</p>
+                    </div>
+                    <div class="connUser">
+                        <img class="sImg" src="./images/anne-s.jpg" alt="user icon">
+                        <p class="users">Anne J</p>
+                    </div>
+                    <div class="connUser">
+                        <img class="sImg" src="./images/alayne-s.jpg" alt="user icon">
+                        <p class="users">Alayne T</p>
+                    </div>
+                    <div class="connUser">
+                        <img class="sImg" src="./images/arry-s.jpg" alt="user icon">
+                        <p class="users">Arry Y</p>
+                    </div>
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

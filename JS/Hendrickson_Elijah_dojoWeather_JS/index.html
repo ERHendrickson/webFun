@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navBar">
+        <h1>DojoWeather</h1>
+        <div class="city">
+            <h3 onclick="alert('Loading weather report...')">Burbank</h3>
+            <h3 onclick="alert('Loading weather report...')">Chicago</h3>
+            <h3 onclick="alert('Loading weather report...')">Dallas</h3>
+        </div>
+    </div>
+    <div id="main">
+        <div id="subBar">
+            <h2>San Jose</h2>
+            <p>show temperature in</p>
+            <select name="temp" id="temp" onchange="tempSwapper(this)">
+                <option id="cel" value="celcius">°C</option>
+                <option id="fah" value="fahrenheit">°F</option>
+            </select>
+        </div>
+        <div id="bar"></div>
+        <div id="dayBar">
+            <div class="day">
+                <h4>Today</h4>
+                <img src="./assets/some_rain.png" alt="rain cloud">
+                <p>some rain</p>
+                <div class="tempSwap">
+                    <p class="high">24°</p>
+                    <p class="low">18°</p>
+                </div>
+            </div>
+            <div class="day">
+                <h4>Tomorrow</h4>
+                <img src="./assets/some_sun.png" alt="Sun">
+                <p>some sun</p>
+                <div class="tempSwap">
+                    <p class="high">27°</p>
+                    <p class="low">19°</p>
+                </div>
+            </div>
+            <div class="day">
+                <h4>Friday</h4>
+                <img src="./assets/some_clouds.png" alt="cloud">
+                <p>some clouds</p>
+                <div class="tempSwap">
+                    <p class="high">21°</p>
+                    <p class="low">16°</p>
+                </div>
+            </div>
+            <div class="day">
+                <h4>Saturday</h4>
+                <img src="./assets/some_sun.png" alt="Sun">
+                <p>some sun</p>
+                <div class="tempSwap">
+                    <p class="high">26°</p>
+                    <p class="low">21°</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cookieBox">
+        <img src="./assets/cookie.png" alt="cookie">
+        <div id="boxText">
+            <h5>Stop! Cookie time</h5>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="vanish('#cookieBox')">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
