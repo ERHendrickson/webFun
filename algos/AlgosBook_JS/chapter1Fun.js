@@ -177,16 +177,115 @@ that final one digit result.
 
 //example!!! 425345 = 4+2+5+3+4+5 = 23 (not a single digit) 2+3 = 5
 function sumToOneDigit(num){
-    //must apart the number in that each digit is recognized as its own number
-    let assEnd = 0;
+    //must break apart the number in that each digit is recognized as its own number
+    let sum = 0;
+    
     while(num > 9){
-        console.log(num);
+        console.log("start loop num =" +num);
         //each interation will give the didgit in the 10s place until number is less than 10 in wich case all digits will be added together.
-        assEnd += num % 10
-        console.log(assEnd)
+        sum += num % 10
+        console.log("sum =" +sum)
         num = Math.floor(num / 10)
+        console.log("end loop num =" +num);
     }
-    console.log(assEnd);
+    sum += num;
+    if(sum > 9){
+        console.log(num)
+        sumToOneDigit(sum);
+    }
+    else{
+        console.log("final sum " + sum)
+
+    }
+
+
 }
 
-console.log(sumToOneDigit(432))
+//sumToOneDigit(56849568549481);
+
+//Fibonacci
+/*Implement the Fibonacci function, a famous mathematical equation that generates a numerical
+sequence such that each number is the sum of the previous two. The Fibonacci numbers at index 0
+and 1, coincidentally, have values of 0 and 1. Your function should accept an argument of which
+Fibonacci number.*/
+//Examples: fibonacci(2) = 1, fibonacci(3) = 2, fibonacci(4) = 3, fibonacci(5) = 5, etc.
+
+//add the last two index values and store in current index
+function fibonacci(num){
+    let firstNumber = 0;
+    let secondNumber = 1;
+    let thirdNumber = 0;
+    for (let i = 0; i < num - 1; i++) {
+        // console.log("begin " + firstNumber, secondNumber, thirdNumber)
+        thirdNumber = secondNumber + firstNumber
+        firstNumber = secondNumber
+        secondNumber = thirdNumber
+        // console.log("end " + firstNumber, secondNumber, thirdNumber)
+    }
+    return thirdNumber
+}
+// console.log(fibonacci(16));
+
+function fibonacciTwo(num){
+    let fibArray = [0,1];
+    for (let i = 1; i < num; i++) {
+        fibArray.push(fibArray[i - 1]+fibArray[i])
+        
+    }
+    return fibArray
+}
+
+// console.log(fibonacciTwo(16))
+
+//last digit of A to the B
+/*Implement a function that accepts two non-negative integers as arguments. Function lastDigitAtoB(a,
+b) should return the last digit of the first number (a) raised to an exponent of the second number (b).
+Examples: given (3, 4), you should return 1 (the last digit of 81: 3 * 3 * 3 * 3). Given (12, 5), return
+2 (the least significant digit of 248832, which is 12 * 12 * 12 * 12 * 12).
+*/
+
+
+function lastDigitAtoB(a, b){
+    return (a**b)%10
+}
+
+// console.log(lastDigitAtoB(3,4))
+
+//clock hand angles
+/*Create function clockHandAngles(seconds) that, given the number of seconds since 12:00:00, will
+print the angles (in degrees) of the hour, minute and second hands. As a quick review, there are 360
+degrees in a full arc rotation. Treat “straight-up” 12:00:00 as 0 degrees for all hands.*/
+
+function clockHandAngles(secs){
+    let secAng = 0;
+    let minAng = 0;
+    let houAng = 0;
+    //conditional which checks if the amount of seconds exceeds that of a minute hour or 12 hours
+    //seconds hand
+    if(secs > 60){
+        secAng = (secs%60) * 3
+    }
+    else{
+        secAng = secs *3
+    }
+    //minutes hand
+    if(secs > 3600){
+        minAng = (secs%3600) * .1
+    }
+    else{
+        minAng = secs *.1
+    }
+    //hours hand
+    if(secs > 43200){
+        houAng = (secs%43200) * .00833333
+    }
+    else{
+        houAng = secs *.00833333
+    }
+
+    console.log(secAng + "°", minAng + "°", houAng + "°");
+}
+
+// clockHandAngles(12355198749815187);
+
+
